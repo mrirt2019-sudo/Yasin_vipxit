@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YASIN_VIPXIT - Python Developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+</head>
+<body>
+    <!-- 3D Background Canvas -->
+    <div id="three-container"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-glow">
+                    <span class="logo-text">YASIN_VIPXIT</span>
+                    <div class="logo-dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#gallery" class="nav-link" data-section="gallery">Gallery</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content-wrapper">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-glow">Python Developer</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Turning</span>
+                        <span class="title-line accent">Ideas into Code</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Python-Powered Solutions for the Digital World
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number" data-count="50">0</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="100">0</div>
+                            <div class="stat-label">Satisfied Clients</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" data-count="3">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary btn-glow">
+                            <i class="fab fa-telegram"></i>
+                            Hire Me
+                        </a>
+                        <a href="#gallery" class="btn btn-secondary">
+                            View My Work
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-elements">
+                        <div class="floating-element element-1">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="floating-element element-2">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="floating-element element-3">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="floating-element element-4">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Services</h2>
+                    <p class="section-subtitle">Professional Python Development Solutions</p>
+                </div>
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card" data-service="automation">
+                        <div class="service-icon">
+                            <i class="fas fa-robot"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <h3>Custom Python Scripting</h3>
+                        <p>Automation, bots, data processing tools, and workflow optimization</p>
+                        <ul class="service-features">
+                            <li>Web Automation</li>
+                            <li>Data Processing</li>
+                            <li>Task Automation</li>
+                            <li>Custom Algorithms</li>
+                        </ul>
+                        <button class="service-btn">Request This</button>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card" data-service="scraping">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud-download-alt"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <h3>Web Scraping & API Integration</h3>
+                        <p>Data extraction, API development, and integration solutions</p>
+                        <ul class="service-features">
+                            <li>Data Extraction</li>
+                            <li>API Development</li>
+                            <li>Real-time Data</li>
+                            <li>Custom Integrations</li>
+                        </ul>
+                        <button class="service-btn">Request This</button>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card" data-service="security">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <h3>Network Analysis Tools</h3>
+                        <p>Network security analysis using Scapy and Wireshark</p>
+                        <ul class="service-features">
+                            <li>Packet Analysis</li>
+                            <li>Network Monitoring</li>
+                            <li>Security Testing</li>
+                            <li>Custom Protocols</li>
+                        </ul>
+                        <button class="service-btn">Request This</button>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card" data-service="web-security">
+                        <div class="service-icon">
+                            <i class="fas fa-bug"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <h3>Web App Security Testing</h3>
+                        <p>Comprehensive security assessment using OWASP ZAP & Burp Suite</p>
+                        <ul class="service-features">
+                            <li>Vulnerability Scanning</li>
+                            <li>Penetration Testing</li>
+                            <li>Security Audits</li>
+                            <li>OWASP Compliance</li>
+                        </ul>
+                        <button class="service-btn">Request This</button>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card" data-service="conversion">
+                        <div class="service-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <h3>Code Translation</h3>
+                        <p>Convert code between Python, C++, Java, JavaScript and more</p>
+                        <ul class="service-features">
+                            <li>Python ⇄ C++</li>
+                            <li>Python ⇄ Java</li>
+                            <li>Python ⇄ JavaScript</li>
+                            <li>Algorithm Translation</li>
+                        </ul>
+                        <button class="service-btn">Request This</button>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="service-card" data-service="cybersecurity">
+                        <div class="service-icon">
+                            <i class="fas fa-hat-cowboy"></i>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <h3>CTF & Cybersecurity Tools</h3>
+                        <p>Capture The Flag environments and security training tools</p>
+                        <ul class="service-features">
+                            <li>CTF Challenges</li>
+                            <li>Training Environments</li>
+                            <li>Security Tools</li>
+                            <li>Educational Content</li>
+                        </ul>
+                        <button class="service-btn">Request This</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <div class="section-header">
+                            <h2 class="section-title">About Me</h2>
+                            <p class="section-subtitle">Python Developer & Cybersecurity Enthusiast</p>
+                        </div>
+                        <div class="about-text">
+                            <p>I'm a passionate Python developer with expertise in creating efficient, secure, and innovative digital solutions. My journey in programming started 3 years ago, and I've been dedicated to mastering the art of code ever since.</p>
+                            <p>I believe in writing clean, maintainable code that not only works but excels in performance and security.</p>
+                        </div>
+                        <div class="skills-section">
+                            <h3>Technical Skills</h3>
+                            <div class="skills-grid">
+                                <div class="skill-category">
+                                    <h4>Programming</h4>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Python</span>
+                                        <span class="skill-tag">JavaScript</span>
+                                        <span class="skill-tag">Java</span>
+                                        <span class="skill-tag">C++</span>
+                                    </div>
+                                </div>
+                                <div class="skill-category">
+                                    <h4>Frameworks & Tools</h4>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Scapy</span>
+                                        <span class="skill-tag">OWASP ZAP</span>
+                                        <span class="skill-tag">Burp Suite</span>
+                                        <span class="skill-tag">Git</span>
+                                        <span class="skill-tag">Docker</span>
+                                    </div>
+                                </div>
+                                <div class="skill-category">
+                                    <h4>Security</h4>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Network Analysis</span>
+                                        <span class="skill-tag">Web Security</span>
+                                        <span class="skill-tag">Penetration Testing</span>
+                                        <span class="skill-tag">Cryptography</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="github-widget">
+                            <h4>GitHub Activity</h4>
+                            <div class="github-stats">
+                                <div class="github-stat">
+                                    <i class="fab fa-github"></i>
+                                    <span>yasinya5ou</span>
+                                </div>
+                                <div class="github-repos">
+                                    <div class="repo">
+                                        <span class="repo-name">python-automation</span>
+                                        <span class="repo-lang">Python</span>
+                                    </div>
+                                    <div class="repo">
+                                        <span class="repo-name">security-tools</span>
+                                        <span class="repo-lang">Python</span>
+                                    </div>
+                                    <div class="repo">
+                                        <span class="repo-name">web-scraping</span>
+                                        <span class="repo-lang">JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Project Gallery</h2>
+                    <p class="section-subtitle">Showcase of my latest work and innovations</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-project="automation">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-badge">Automation</div>
+                            </div>
+                            <div class="project-content">
+                                <h3>Advanced Web Automation Suite</h3>
+                                <p>Multi-threaded automation tool for data extraction and processing</p>
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>Selenium</span>
+                                    <span>BeautifulSoup</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-project="security">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-badge">Security</div>
+                            </div>
+                            <div class="project-content">
+                                <h3>Network Security Analyzer</h3>
+                                <p>Real-time network packet analysis with threat detection</p>
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>Scapy</span>
+                                    <span>Security</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-project="web">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <div class="project-badge">Web App</div>
+                            </div>
+                            <div class="project-content">
+                                <h3>Web Vulnerability Scanner</h3>
+                                <p>Comprehensive security scanner for web applications</p>
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>OWASP</span>
+                                    <span>Security</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="section-header">
+                            <h2 class="section-title">Let's Work Together</h2>
+                            <p class="section-subtitle">Ready to bring your ideas to life?</p>
+                        </div>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fab fa-telegram"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h3>Telegram</h3>
+                                    <p>@YASIN_VIPXIT</p>
+                                    <span>Fastest response time</span>
+                                </div>
+                                <a href="https://t.me/YASIN_VIPXIT" class="method-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h3>GitHub</h3>
+                                    <p>yasinya5ou</p>
+                                    <span>Check out my projects</span>
+                                </div>
+                                <a href="https://github.com/yasinya5ou" class="method-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required>
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Your Email</label>
+                            </div>
+                            <div class="form-group">
+                                <select id="service" name="service" required>
+                                    <option value="">Select a Service</option>
+                                    <option value="automation">Python Automation</option>
+                                    <option value="scraping">Web Scraping</option>
+                                    <option value="security">Security Tools</option>
+                                    <option value="conversion">Code Conversion</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <label for="message">Project Details</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-glow">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Particles -->
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <script src="js/three-scene.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
